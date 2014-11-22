@@ -103,7 +103,7 @@ ggplot(second,aes(x = v, y = V2,fill = V1)) +
     geom_bar(position = "fill",stat='identity') + 
     coord_flip() +
     scale_y_continuous(labels = percent_format()) +
-    ggtitle('the second shortest path length between two nodes') + 
+    ggtitle('the second shortest path length between two nodes\n') + 
     labs(x = ' ',y = 'total number of pair') +
     theme(axis.title.x = element_text(size = 16, colour = 'black'),
           axis.title.y = element_text(size = 16, colour = 'black', angle = 90),
