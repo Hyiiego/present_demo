@@ -1,0 +1,214 @@
+--- 
+title       : Link Prediction
+subtitle    : Social Network Analysis Hw2
+author      : 'R03922142 Yu Ran  R03922145 Yi Huang  R03944049 Bowen Yuan'
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme: zenburn      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+github:
+    user: hyiiego
+    repo: present_demo
+--- 
+
+<!-- Limit image width and height -->
+<style type='text/css'>
+img {
+    max-height: 560px;
+    max-width: 964px;
+}
+</style>
+
+<!-- Center image on slide -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script type='text/javascript'>
+$(function() {
+    $("p:has(img)").addClass('centered');
+});
+</script>
+
+
+## All the way down
+
+&nbsp;
+
+&nbsp;
+
+
+### - Explore the graph
+
+### - Select candidate
+
+### - Probe baseline method
+
+### - Experiment learning method 
+
+### - Compare method
+
+
+
+--- &twocol w1:40% w2:40%
+
+
+## Distributions
+
+&nbsp;
+
+*** =left
+
+```{r,echo=FALSE,fig.height=5,fig.width=6.5}
+library(data.table)
+library(RJSONIO)
+library(ggplot2)
+library(reshape2)
+library(scales)
+
+degree <- fread('/Users/Hyiiego/Documents/Dropbox/NTU/SNA/hw2/result.csv')
+ggplot(data=degree,aes(x=value,y=count)) + geom_point() + 
+    ggtitle('#friends distribution of all nodes') + 
+    labs(x = '#friends') +
+  theme(axis.title.x = element_text(size = 16, colour = 'black'),
+         axis.title.y = element_text(size = 16, colour = 'black', angle = 90),title = element_text(size = 16, colour = 'black'),
+        axis.text=element_text(size=16))
+```
+
+*** =right
+
+```{r,echo=FALSE,fig.height=5,fig.width=6.5,warning=FALSE}
+degree <- fread('/Users/Hyiiego/Documents/Dropbox/NTU/SNA/hw2/result.csv')
+ggplot(data=degree,aes(x=value,y=test_count)) + geom_point() + 
+    ggtitle('#friends distribution of test nodes') + 
+    labs(x = '#friends') +
+  theme(axis.title.x = element_text(size = 14, colour = 'black'),
+         axis.title.y = element_text(size = 14, colour = 'black', angle = 90),title = element_text(size = 14, colour = 'black'),
+        axis.text=element_text(size=14))
+```
+
+--- 
+
+## Candidate Selection
+
+from all nodes in graph to people who is within 3-step distance from the target node
+
+&nbsp;
+
+```{r,echo=FALSE,fig.height=3.5,fig.width=10}
+second <- fread('/Users/Hyiiego/Documents/Dropbox/NTU/SNA/hw2/report/second_length.csv')
+second$v = 'length'
+second$V1 = as.factor(second$V1)
+ggplot(second,aes(x = v, y = V2,fill = V1)) + 
+    geom_bar(position = "fill",stat='identity') + 
+    coord_flip() +
+    scale_y_continuous(labels = percent_format()) +
+    ggtitle('the second shortest path length between two nodes') + 
+    labs(x = ' ',y = 'total number of pair') +
+    theme(axis.title.x = element_text(size = 16, colour = 'black'),
+          axis.title.y = element_text(size = 16, colour = 'black', angle = 90),
+          title = element_text(size = 16, colour = 'black'),          
+          axis.text=element_text(size=16),
+          legend.position='bottom',
+          legend.title=element_blank()) +
+    guides(fill = guide_legend(keywidth = 1.4, keyheight = 1.4)) 
+```
+
+---
+
+## Preliminary Probes
+
+### Methods Based on Node Neighborhoods
+  - Common Neighbors
+  - Jaccard's coefficient
+  - Adamic/Adar
+  - Resource Allocation Index
+  
+  
+### Methods Based on All Paths
+  - Shortest-path distance
+  - Katz
+  - Preferential Attachment
+
+
+---
+
+
+## Number of recommmendation
+
+&nbsp;
+
+### - Based on threshold
+
+### - Corresponding to degree
+
+---
+
+## Learning Method
+
+### Collaborative Filtering
+
+using adjacency matrix as feature
+
+### Classification(one-class & two-class)
+
+##### Data Sampling
+select training set and validate set
+
+##### Feature extraction
+combine user profile and topological features
+
+##### Models
+  - logistic regression
+  - SVM
+
+---
+
+
+## Tools and Packages
+
+&nbsp;
+
+### - Graphlab
+
+### - NetworkX
+
+### - Scikit-learn
+
+### - MongoDB
+
+---
+
+
+## Conclusion
+
+&nbsp;
+
+### - from bottom to top
+
+### - dual with unbalancing
+
+### - time is everything
+
+
+--- 
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+## Thank You!
+
+
