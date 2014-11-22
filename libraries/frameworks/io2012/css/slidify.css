@@ -34,16 +34,16 @@
 
 /* Styles for Title Slide */
 .title-slide hgroup > h1{
-  font-family: 'Helvetica'
+  font-family: 'Helvetica';
 }
 
 .title-slide hgroup > h2{
-  font-family: 'Helvetica'
+  font-family: 'Helvetica';
 }
 
 /* Fonts and Spacing */
 article p, article li, article li.build, section p, section li{
-  font-family: 'Helvetica'
+  font-family: 'Helvetica';
   text-align: justify;
   font-size:22px;
   line-height: 1.5em;
@@ -51,7 +51,7 @@ article p, article li, article li.build, section p, section li{
 }
 
 slide:not(.segue) h2{
-  font-family: 'Calibri', Arial, sans-serif;
+  font-family: 'Helvetica';
   font-size: 52px;
   font-style: normal;
   font-weight: bold;
@@ -88,7 +88,7 @@ iframe {
 
 /* Quotes and Shout (for io2012, custom) */
 article q {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica';
 }
 
 q {
@@ -146,7 +146,7 @@ q.shout:after {
 table caption{
   margin-top: 20pt;
   font-weight: normal;
-  font-family: "Helvetica", Garuda, sans-serif;
+  font-family: 'Helvetica';
 }
 
 table th {
@@ -333,7 +333,7 @@ slide:not(.segue)  h2{
  color: darkred;
 }
 article p {
-  font-family: "Helvetica"
+  font-family: "Helvetica";
 }
 
 code {
@@ -357,7 +357,7 @@ pre code {
 }
 
 .title-slide hgroup > h1{
- font-family: "Helvetica"
+ font-family: "Helvetica";
 }
 
 .title-slide hgroup > h1, 
