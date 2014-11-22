@@ -1,7 +1,7 @@
 --- 
 title       : Link Prediction
-subtitle    : Social Network Analysis Hw2
-author      : 'R03922142 Yu Ran  R03922145 Yi Huang  R03944049 Bowen Yuan'
+subtitle    : Social Network Analysis HW2
+author      : 'R03922142 Yu Ran , R03922145 Yi Huang , R03944049 Bowen Yuan'
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
