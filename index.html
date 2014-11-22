@@ -129,7 +129,7 @@ $(function() {
 <ul>
 <li>Common Neighbors</li>
 <li>Jaccard&#39;s coefficient</li>
-<li>Adamic/Adar 😊 </li>
+<li>Adamic/Adar \(\bigstar\)</li>
 <li>Resource Allocation Index</li>
 </ul>
 
@@ -171,19 +171,10 @@ $(function() {
 
 <h3>Classification(one-class &amp; two-class)</h3>
 
-<h5>Data Sampling</h5>
-
-<p>select training set and validate set</p>
-
-<h5>Feature extraction</h5>
-
-<p>combine user profile and topological features</p>
-
-<h5>Models</h5>
-
 <ul>
-<li>logistic regression</li>
-<li>SVM</li>
+<li><p>Data Sampling - select training set and validate set</p></li>
+<li><p>Feature extraction - combine user profile and topological features</p></li>
+<li><p>Models - logistic regression, SVM</p></li>
 </ul>
 
   </article>
@@ -318,7 +309,21 @@ $(function() {
 </body>
   <!-- Load Javascripts for Widgets -->
   
-  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- DONE LOADING HIGHLIGHTER JS FILES -->

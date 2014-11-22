@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme: zenburn      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 github:
@@ -82,7 +82,7 @@ from all nodes in graph to people who is within 3-step distance from the target 
 ### Methods Based on Node Neighborhoods
   - Common Neighbors
   - Jaccard's coefficient
-  - Adamic/Adar 😊 
+  - Adamic/Adar $\bigstar$
   - Resource Allocation Index
   
   
@@ -113,15 +113,11 @@ using adjacency matrix as feature
 
 ### Classification(one-class & two-class)
 
-##### Data Sampling
-select training set and validate set
+- Data Sampling - select training set and validate set
 
-##### Feature extraction
-combine user profile and topological features
+- Feature extraction - combine user profile and topological features
 
-##### Models
-  - logistic regression
-  - SVM
+- Models - logistic regression, SVM
 
 ---
 
