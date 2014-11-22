@@ -82,7 +82,7 @@ from all nodes in graph to people who is within 3-step distance from the target 
 ### Methods Based on Node Neighborhoods
   - Common Neighbors
   - Jaccard's coefficient
-  - Adamic/Adar
+  - Adamic/Adar 😊 
   - Resource Allocation Index
   
   

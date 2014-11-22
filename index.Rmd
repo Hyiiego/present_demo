@@ -121,7 +121,7 @@ ggplot(second,aes(x = v, y = V2,fill = V1)) +
 ### Methods Based on Node Neighborhoods
   - Common Neighbors
   - Jaccard's coefficient
-  - Adamic/Adar
+  - Adamic/Adar 😊 
   - Resource Allocation Index
   
   
