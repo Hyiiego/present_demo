@@ -88,6 +88,8 @@ from all nodes in graph to people who is within 3-step distance from the target 
   
 ### Methods Based on All Paths
   - Preferential Attachment
+  
+### With Community Information
 
 
 ---
