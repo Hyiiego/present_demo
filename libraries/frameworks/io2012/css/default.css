@@ -473,7 +473,7 @@ h2 {
   font-size: 45px;
   line-height: 45px;
   letter-spacing: -2px;
-  color: #515151;
+  color: black;
 }
 
 /* line 323, ../scss/default.scss */
@@ -482,7 +482,11 @@ h3 {
   letter-spacing: -1px;
   line-height: 2;
   font-weight: inherit;
-  color: #797979;
+  color: #404040;
+}
+
+h4 {
+  color:black;
 }
 
 /* line 331, ../scss/default.scss */
@@ -1356,7 +1360,7 @@ aside.gdbar img {
 /* line 940, ../scss/default.scss */
 .title-slide hgroup p {
   font-size: 20px;
-  color: #797979;
+  color: black;
   line-height: 1.3;
   margin-top: 2em;
 }
