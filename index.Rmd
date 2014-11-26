@@ -127,6 +127,8 @@ ggplot(second,aes(x = v, y = V2,fill = V1)) +
   
 ### Methods Based on All Paths
   - Preferential Attachment
+  
+### With Community Information
 
 
 ---
