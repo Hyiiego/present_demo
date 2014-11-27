@@ -104,8 +104,10 @@ from all nodes in graph to people who is within 3-step distance from the target 
 ### - Based on threshold
 
 ### - Corresponding to degree
-    - Common Neighbors: 50%
-    - Adamic/Adar: 30%
+
+Common Neighbors:50%
+
+Adamic/Adar: 30%
 
 ---
 

@@ -144,8 +144,10 @@ ggplot(second,aes(x = v, y = V2,fill = V1)) +
 ### - Based on threshold
 
 ### - Corresponding to degree
-    - Common Neighbors: 50%
-    - Adamic/Adar: 30%
+
+Common Neighbors:50%
+
+Adamic/Adar: 30%
 
 ---
 
