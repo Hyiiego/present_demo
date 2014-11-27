@@ -182,7 +182,7 @@ using adjacency matrix as feature
 
 ### - from bottom to top
 
-### - dual with unbalancing
+### - deal with unbalancing
 
 ### - time is everything
 
