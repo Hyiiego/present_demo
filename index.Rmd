@@ -110,8 +110,9 @@ ggplot(second,aes(x = v, y = V2,fill = V1)) +
           title = element_text(size = 16, colour = 'black'),          
           axis.text=element_text(size=16),
           legend.position='bottom',
-          legend.title=element_blank()) +
-    guides(fill = guide_legend(keywidth = 1.4, keyheight = 1.4)) 
+          legend.title=element_blank(),
+          legend.text=element_text(size=16)) +
+          guides(fill = guide_legend(keywidth = 1.4, keyheight = 1.4)) 
 ```
 
 ---
