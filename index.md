@@ -80,9 +80,11 @@ from all nodes in graph to people who is within 3-step distance from the target 
 ## Preliminary Probes
 
 ### Methods Based on Node Neighborhoods
-  - Common Neighbors
+  - Common Neighbors(F1-score:0.103298 MAP:0.083843)
+  
   - Jaccard's coefficient
-  - Adamic/Adar $\bigstar$
+  - Adamic/Adar $\bigstar$ (F1-score:0.112816 MAP:0.083212)
+  
   - Resource Allocation Index
   
   
